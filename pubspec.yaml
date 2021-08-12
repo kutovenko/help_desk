@@ -1,0 +1,30 @@
+name: help_desk
+description: A new pet project
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get_it: ^4.0.4
+  flutter_bloc: ^7.0.0
+  shared_preferences: ^2.0.6
+  dio: ^4.0.0
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - graphics/
+    - graphics/launcher/
