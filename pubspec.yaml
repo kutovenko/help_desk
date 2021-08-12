@@ -1,19 +1,24 @@
 name: help_desk
-description: A new pet project
+description: A new pet project with BLOC and GetIt
 
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0" #Для скорости и большего погружения в возможный проект мы условно не будем использовать все фишки налл-сэйфети
 
 dependencies:
   flutter:
     sdk: flutter
+  #state management
   get_it: ^4.0.4
   flutter_bloc: ^7.0.0
+  #storage
   shared_preferences: ^2.0.6
+  #network
   dio: ^4.0.0
+  #graphics
+  flutter_svg: ^0.22.0
 
 
   cupertino_icons: ^1.0.2
