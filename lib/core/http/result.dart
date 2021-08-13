@@ -15,6 +15,14 @@ class Result<A, B extends Exception> {
   bool isError() {
     return this is Error<A, B>;
   }
+
+  Success<A, B> asSuccess() {
+    return this as Success<A, B>;
+  }
+
+  Error<A, B> asError() {
+    return this as Error<A, B>;
+  }
 }
 
 class Success<A, B extends Exception> extends Result<A, B> {

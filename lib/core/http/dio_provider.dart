@@ -1,19 +1,20 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:help_desk/core/environment.dart';
 import 'package:help_desk/core/http/interceptors.dart';
 
 class DioProvider {
-  final Environment _environment;
+  final Environment environment;
 
   final Dio _dio = Dio();
 
   Dio get dio => _dio;
 
-  DioProvider(this._environment);
+  DioProvider({@required this.environment});
 
   void configureDio() {
     var options = BaseOptions(
-      baseUrl: _environment.baseUrl,
+      baseUrl: environment.baseUrl,
       connectTimeout: 5000,
       receiveTimeout: 3000,
     );

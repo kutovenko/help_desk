@@ -13,8 +13,7 @@ dependencies:
   #state management
   get_it: ^4.0.4
   flutter_bloc: ^7.0.0
-  #storage
-  shared_preferences: ^2.0.6
+  equatable: ^1.2.6
   #network
   dio: ^4.0.0
   #graphics
